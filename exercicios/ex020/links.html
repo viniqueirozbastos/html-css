@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blue;
+
+        }
+
+        .especial {
+            background-color: rgb(187, 121, 121);
+        }
+        .especial::after {
+            content: ' ⇐';
+        }
+
+        .especial::before {
+            content: '⇒ ';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.flamengo.com.br/" target="_blank" class="especial">Site do Flamengo</a></li>
+        <li><a href="https://www.youtube.com/" class="especial">Youtube</a></li>
+        <li><a href="https://www.nfl.com/">NFL</a></li>
+    </ul>
+</body>
+</html>
